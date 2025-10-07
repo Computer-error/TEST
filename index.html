@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRILL 1</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            position: center;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        </style>
 </head>
 <body>
     <h2>Simple Avg Calc</h2>
     <p>score 1:</p>
-    <input type="number" id="score1">
+    <input type="text" id="score1">
     <p>score 2:</p>
-    <input type="number" id="score2">
-    <button pyclick="calculate_average">Calculate Average</button>
-    <p>Your average is: <span id="average"></span></p>
-    <p>passed? <span id="result"></span></p>
+    <input type="text" id="score2">
+    <button py-click="calculate_average">calculate</button>
+    <p>Your average is: <span id="averageA"></span></p>
+    <p>Passed: <span id="result"></span></p>
     <script type="py" src="main.py"></script>
 </body>
 </html> 
