@@ -1,21 +1,15 @@
-from index import document
+from pyscript import document
 
-def calculate_average(event=None):
-    try:
-        score1 = float(document.getElementById("score1").value or 0)
-    except Exception:
-        score1 = 0.0
-    try:
-        score2 = float(document.getElementById("score2").value or 0)
-    except Exception:
-        score2 = 0.0
+def calculate_average(event):
+    score1 = float(document.getElementById("score1").value)
+    score2 = float(document.getElementById("score2").value)
 
-    avg = (score1 + score2) / 2
+    average = (score1 + score2) / 2
 
-    if avg >= 75:
-        result = "Passed"
+    if average >= 75:
+        result = "Yes"
     else:
-        result = "Failed"
+        result = "No"
 
-    document.getElementById("average").innerText = str(round(avg, 2))
+    document.getElementById("averageA").innerText = str(round(average,2))
     document.getElementById("result").innerText = result
