@@ -47,9 +47,9 @@ display(beverages[1], target="prod2")
 display(f"₱{menu['Choc Milktea']:.2f}", target="price2")
 display(beverages[2], target="prod3")
 display(f"₱{menu['Strawberry Milktea']:.2f}", target="price3")
-display(beverages[0], target="prod4")
+display(beverages[3], target="prod4")
 display(f"₱{menu['Coffee Milktea']:.2f}", target="price4")
-display(beverages[1], target="prod5")
+display(beverages[4], target="prod5")
 display(f"₱{menu['Milktea w/ IceCream']:.2f}", target="price5")
 
 # Display additional information
@@ -58,3 +58,4 @@ display(f"Open: {business_hours[0]} - {business_hours[1]}", target="openingHours
 
 # Display order type
 display(f"Dine-in Available", target="orderType")
+
