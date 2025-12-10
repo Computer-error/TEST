@@ -1,7 +1,7 @@
 from pyscript import document
 
 def reveal(event):
-    grp = (document.getElementById("clb").value)
+    grp = float(document.getElementById("clb").value)
      
     if grp == 1:
         club = "Math Club " \
@@ -29,4 +29,5 @@ def reveal(event):
         club = "Please select a club to view"
         
     document.getElementById("view").innerText = club
+
 
