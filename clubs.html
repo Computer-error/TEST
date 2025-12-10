@@ -40,36 +40,35 @@
     <div class="box">
     <div class="container-fluid py-5">
      <div class="ss">
-    <h2>MMCI: Maria Montessori Center Inc High School</h2>
-    <h4>Where the child matures to live in this world.</h3>
-    <br>
-    <div class="row">
+    <h2>MMCI Club Viewer</h2>
+    <h4>See what clubs we have in store for you.</h4>
+    <p>Clubs are extracurricular activities that help you learn more about a certain topic.</p>
+<div class="row">
     <div class="col">
-    <h3>A breif background</h3>
-    <h5>Ever since 19xx we have been teaching students to help them uneash their ture potential. We have setteled in xx campuses with our most recent one being in xxxx. We also offer activites to engage you child in both onsite and online.
-    Dont hesitate to enroll your child here, it will be an experience for them to live!</h5>
-    <br>
-    <div class="row">
+    <label for="clubs">Select a club:</label>
+    <select name="clubs" id="clb">
+    <option value="0">Select a club.</option>
+    <option value="1">Math</option>
+    <option value="2">Science</option>
+    <option value="3">Band</option>
+    <option value="4">Robotics</option>
+    <option value="5">My club is not there.</option>
+  </select>
+  </div>
     <div class="col">
-    <button class="btn btn-success btn-lg" onclick="location.href='enroll.html'">Enroll now!</button>
-    </div>
-    <div class="col">
-    <button class="btn btn-primary btn-lg" onclick="location.href='calc.html'">Calculate your grades now!</button>
-    </div>
-    <div class="col">
-    <button class="btn btn-primary btn-lg" onclick="location.href='clubs.html'">View our clubs now!</button>
+  <button class="btn btn-primary center" py-click="reveal">View</button>
     </div></div>
-
-
-    </div>
-    <div class="col">
-    <img src="mmci.png" alt="school">
+  <div class="boxini">
+    <p>Info: <span id="view"></span></p>
+  </div>
+    
     </div>
     </div>
     
     
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="main2.py"></script>
 </body>
 </html>
 
