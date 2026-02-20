@@ -1,15 +1,15 @@
 from pyscript import document
 
-def calculate_average(event):
-    score1 = float(document.getElementById("score1").value)
-    score2 = float(document.getElementById("score2").value)
+def reveal(event):
+    user = (document.getElementById("me").value)
+    password = (document.getElementById("pw").value)
+    active = True
 
-    average = (score1 + score2) / 2
+    if user == "ECRV" and password == "909150":
+        if active == True:
+           yes = "Access Granted, click me to proceed."
+        else:
+            no = "Wrong username or password. Please try again."
 
-    if average >= 75:
-        result = "Yes"
-    else:
-        result = "No"
-
-    document.getElementById("averageA").innerText = str(round(average,2))
-    document.getElementById("result").innerText = result
+    document.getElementById("nuhuh").innerText = no
+    document.getElementById("yesyes").innerText = yes
