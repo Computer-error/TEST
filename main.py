@@ -1,9 +1,11 @@
 from pyscript import document
 
 def reveal(event):
-    user = (document.getElementById("me").value)
-    password = (document.getElementById("pw").value)
+    user = (document.getElementById("me"))
+    password = (document.getElementById("pw"))
     active = True
+    yes = ""
+    no = ""
 
     if user == "ECRV" and password == "909150":
         if active == True:
