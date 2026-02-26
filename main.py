@@ -9,7 +9,9 @@ def reveal(event):
         if active == True:
            yes = "Access Granted, click me to proceed."
         else:
-            no = "Wrong username or password. Please try again."
+            no = "System error. Please try again later."
+    else:
+        no = "Wrong username or password. Please try again."    
 
     document.getElementById("nuhuh").innerText = no
     document.getElementById("yesyes").innerText = yes
